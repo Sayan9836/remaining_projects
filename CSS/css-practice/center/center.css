@@ -1,0 +1,110 @@
+
+/*  Using flexbox  */
+
+/* html,body{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container h1 {
+    align-self: center;
+}  */
+
+
+/*  Using transform  */
+
+/* .container {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+} */
+
+/*  Using margin: 0 auto  */
+
+/* .container h1{
+    word-wrap: break-word;
+    width: max-content;
+    height:auto;
+    margin:auto;
+} */
+
+/*  Using text-align:center  */
+
+/* .container h1 {
+    text-align: center;
+} */
+
+/*  Using positioning  */
+
+.container {
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    /* margin: auto; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+}
+
+/*  Using calc() */
+/* 
+h1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    word-wrap: break-word;
+    background-color: red;
+    top: calc(50% - 100px / 2);
+    left: calc(50% - 100px / 2);
+
+} */
+
+/*  vertical aign */
+/* body,html, .container{
+    height: 100vh;
+}
+
+h1{
+    position: relative;
+    top: 50%;
+    transform:  translateY(-50%);
+} */
+
+/*  vertical align Ghost element technique */
+
+/* .container {
+    border: 2px solid red;
+    text-align: center;
+    white-space: nowrap;
+}
+.container::before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right:  -0.25em;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    white-space: normal;
+}
+
+h1 {
+    letter-spacing:1cqh;
+} */

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: clamp(25rem,45vw,45rem);
+    position: relative;
+    aspect-ratio: 1.5;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 1px 1px 5px #807e7e;
+}
+
+h3 {
+    font-weight: 700;
+}
+p {
+    font-weight: 500;
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 60vw;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-inline: auto;
+  margin-top: 4rem;
+  align-items: center;
+  width: fit-content;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 1s ease;
+}

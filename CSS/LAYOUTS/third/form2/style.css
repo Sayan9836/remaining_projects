@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  display: grid;
+  grid-template-areas:
+    "customer comment"
+    "submit submit";
+
+  gap: 0.5rem 0.8rem;
+  max-width: 60vw;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+input {
+  padding: 0.6rem 1.25rem;
+}
+
+.customer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.customer > div {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.customer > div > input {
+  flex-grow: 1;
+}
+
+fieldset {
+  border: 0;
+}
+
+.customer {
+  grid-area: customer;
+}
+
+.comment {
+  grid-area: comment;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  height: 100%;
+  resize: vertical;
+}
+
+button {
+  grid-area: submit;
+}
+
+button {
+  padding: 0.5rem 1.25rem;
+  font-size: 1.1rem;
+  border: none;
+}
+button:hover {
+  background: rgb(240, 240, 240);
+}
+
+@media screen and (max-width: 45em) {
+  form {
+    grid-template-areas:
+      "customer"
+      "comment"
+      "submit";
+
+    max-width: 90vw;
+  }
+}

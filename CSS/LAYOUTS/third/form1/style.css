@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  display: grid;
+  grid-template-areas:
+    "customer taxi"
+    "customer extra"
+    "pickup dropoff"
+    "instruction instruction"
+    "submit submit";
+
+  gap: 0.5rem 2rem;
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+label {
+  display: block;
+  line-height: 2;
+}
+
+select,
+textarea,
+input:not([type="radio"]):not([type="checkbox"]) {
+  width: 100%;
+  padding: 0.6rem 1.25rem;
+  outline: 1px solid gray;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-inline-end: 0.3rem;
+}
+
+fieldset {
+  border: 0;
+}
+
+.customer {
+  grid-area: customer;
+}
+
+.taxi {
+  grid-area: taxi;
+}
+
+.extra {
+  grid-area: extra;
+}
+
+.pickup {
+  grid-area: pickup;
+}
+
+.dropoff {
+  grid-area: dropoff;
+}
+
+.instruction {
+  grid-area: instruction;
+}
+
+button {
+  grid-area: submit;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  box-shadow: 2px 2px 2px #7f7e7e;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 45em) {
+  form {
+    grid-template-areas:
+      "customer"
+      "customer"
+      "taxi"
+      "extra"
+      "pickup"
+      "dropoff"
+      "instruction"
+      "submit";
+  }
+}

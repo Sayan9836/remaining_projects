@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 99.9vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "A A B"
+    "C D B";
+  gap: 8px;
+  margin: auto;
+  height: 100%;
+}
+
+.wrapper > * {
+  background: #5e5d5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0.5rem;
+}
+.wrapper > *:hover {
+  background-color: rgb(63, 63, 63);
+}
+
+.A {
+  grid-area: A;
+}
+
+.B {
+  grid-area: B;
+}
+
+.C {
+  grid-area: C;
+}
+
+.D {
+  grid-area: D;
+}

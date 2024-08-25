@@ -1,0 +1,9 @@
+.container {
+  border: 2px solid rgb(228, 225, 225);
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  min-height: 600px;
+  margin-top: 4rem;
+  overflow-x: auto;
+}

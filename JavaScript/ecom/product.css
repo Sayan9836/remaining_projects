@@ -1,0 +1,10 @@
+
+
+.navbar {
+    position: relative;
+}
+
+.navbar button {
+    position: absolute;
+    right: 1.5rem;
+}

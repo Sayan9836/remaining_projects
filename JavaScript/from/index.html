@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- <h1>Registration Form</h1> -->
+    <form
+      action=""
+      method="post"
+      enctype="multipart/form-data"
+      onsubmit="handelData()"
+    >
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <div class="boxes">
+          <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" />
+          </div>
+          <div>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" />
+          </div>
+          <div>
+            <label for="other">Others</label>
+            <input type="radio" name="gender" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          minlength="8"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+      <div class="docs">
+        <label for="documents">Documents:</label>
+        <select name="documents" id="documents" required>
+          <option value="">Aadhar</option>
+          <option value="">Pan</option>
+          <option value="">Voter Id</option>
+        </select>
+      </div>
+      <div>
+        <label for="file">File:</label>
+        <input type="file" name="file" required />
+      </div>
+      <div>
+        <label for="name">Interest:</label>
+        <div class="boxes">
+          <div>
+            <label for="football">football</label>
+            <input type="checkbox" name="football" />
+          </div>
+          <div>
+            <label for="football">cricket</label>
+            <input type="checkbox" name="cricket" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <label for="number">Ph No:</label>
+        <input
+          type="number"
+          name="PhNo"
+          placeholder="Enter your Ph No"
+          required
+        />
+      </div>
+      <div>
+        <label for="url">profile:</label>
+        <input
+          type="url"
+          name="profile"
+          placeholder="Enter your Profile Link"
+        />
+      </div>
+      <div>
+        <label for="bio">Bio:</label>
+        <textarea name="bio" placeholder="write here"></textarea>
+      </div>
+      <div class="btn">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>

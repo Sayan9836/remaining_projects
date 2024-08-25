@@ -1,0 +1,77 @@
+
+
+body {
+    height: 100%;
+}
+
+
+button {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 5rem;
+    margin-left: calc(50% - 3rem);
+    padding: 1rem 1.5rem;
+    background-color: #262525ec;
+    color: #f2f2f2;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 5px;
+    height: calc(100% + 20px);
+    background-color: rgba(215, 198, 97,0.6);
+    backdrop-filter: blur(2px);
+    transform: rotate(35deg);
+    transition:  cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+button::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -9px;
+    left: 96%;
+    width: 5px;
+    height: calc(100% + 20px);
+    background-color: rgba(215, 198, 97,0.6);
+    backdrop-filter: blur(2px);
+    transform: rotate(35deg);
+    transition:  cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+button:hover::after {
+
+    animation: move 1.5s infinite;
+
+}
+
+
+@keyframes move {
+    0% {
+        left: 0;
+        background: linear-gradient(gold,silver,blue)
+    }
+
+    80% {
+        left: 100%;
+        background: linear-gradient(rgb(159, 151, 105),rgb(194, 70, 70),rgb(79, 79, 192))
+
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+

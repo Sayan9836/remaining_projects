@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  form > * {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  input {
+    padding: 0.3rem 1rem;
+    border: 2px solid rgb(181, 178, 178);
+    outline: none;
+  }
+  
+  button {
+    padding: 0.3rem 1rem;
+    width: fit-content;
+    font-size: 1.05rem;
+    border-radius: 4px;
+    border-style: none;
+    box-shadow: 1px 1px 2px #414141;
+  }
+  
+  .output {
+    display: flex;
+    flex-direction: column;
+  }
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="">
+      <fieldset class="customer">
+        <label for="name">Name</label>
+        <input type="text" name="name" />
+
+        <label for="PhoneNo">PhoneNo</label>
+        <input type="text" name="PhoneNo" />
+
+        <label for="email">Email</label>
+        <input type="text" name="email" />
+      </fieldset>
+      <fieldset class="taxi">
+        <legend>Which taxi do you require?</legend>
+
+        <label for="Car"
+          ><input type="radio" name="taxi" value="car" />Car</label
+        >
+        <label for="Van"
+          ><input type="radio" name="taxi" value="Van" />Van</label
+        >
+        <label for="Tuk Tuk"
+          ><input type="radio" name="taxi" value="Tuk Tuk" />Tuk Tuk</label
+        >
+      </fieldset>
+      <fieldset class="extra">
+        <legend>Extras</legend>
+        <label for="Baby Seat"
+          ><input type="checkbox" name="extra" value="Baby Seat" />Baby
+          Seat</label
+        >
+        <label for="Wheelchair Access"
+          ><input
+            type="checkbox"
+            name="extra"
+            value="Wheelchair Access"
+          />Wheelchair Access</label
+        >
+        <label for="Stock Tip"
+          ><input type="checkbox" name="extra" value="Stock Tip" />Stock
+          Tip</label
+        >
+      </fieldset>
+      <fieldset class="pickup">
+        <label for="pickup">Pickup Date/Time</label>
+        <input type="datetime-local" name="pickup_local" />
+
+        <label for="">Pickup Place</label>
+        <select name="pickup" id="pickup_local">
+          <option value="taxi office" selected>taxi office</option>
+          <option value="Town hall">Town hall</option>
+          <option value="we'll guess">we'll guess</option>
+        </select>
+      </fieldset>
+      <fieldset class="dropff">
+        <label for="dropoff">dropff</label>
+        <input type="text" list="destination" />
+        <datalist id="destination">
+          <option value="airport">airport</option>
+          <option value="seaport">seaport</option>
+          <option value="landport">landport</option>
+        </datalist>
+      </fieldset>
+
+      <fieldset class="instruction">
+        <label for="instruction">Instruction</label>
+        <textarea name="" id="" cols="30" rows="4"></textarea>
+      </fieldset>
+      <button class="submit" type="sybmit">Submit booking</button>
+    </form>
+  </body>
+</html>

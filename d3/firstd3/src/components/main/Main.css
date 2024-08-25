@@ -1,0 +1,26 @@
+.main {
+  overflow-x: scroll;
+}
+.main::-webkit-scrollbar {
+  height: 0;
+}
+
+svg {
+  height: 600px;
+  width: 1000px;
+}
+
+.bar:nth-child(2n + 1) {
+  fill: white;
+}
+.bar:nth-child(2n) {
+  fill: #f2f5ee;
+}
+
+.line {
+  stroke: #dadada;
+}
+
+.divider {
+  stroke: #a2a4a1;
+}
